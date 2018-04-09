@@ -1,0 +1,9 @@
+version: '3'
+services:
+  redis:
+    image: redis:3.2-alpine
+    command: redis-server --appendonly yes # --requirepass password
+    # volumes:
+    #   - ./data:/data
+    ports:
+      - 6379:6379
