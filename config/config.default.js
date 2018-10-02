@@ -27,7 +27,7 @@ module.exports = appInfo => {
 
   config.io = {
     init: {
-      wsEngine: 'uws',
+      wsEngine: 'ws',
     }, // passed to engine.io
     namespace: {
       '/': {
